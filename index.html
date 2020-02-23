@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 
-    <html lang="en-us">
+<html lang="en-us">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Weather Trending</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Trending</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <body>
+<body>
 
-        <div class="container-fluid">>
-            <div class="row">
-                <div class="col-md-12">
+    <div class="container-fluid">>
+        <div class="row">
+            <div class="col-md-12">
 
-                    <nav class="navbar">
-                        <a href="landingPage.html">
-                            <h1>Latitude</h1>
-                        </a>
-                        <ul>
+                <nav class="navbar">
+                    <a href="landingPage.html">
+                        <h1>Latitude</h1>
+                    </a>
+                    <ul>
 
-                            <li>
+                        <li>
 
-                                <select id="Nav-Select" onchange="location = this.value;">
-                                    <option value="#">select</option>
-                                    <option value="landingPage.html">home</option>
-                                    <option value="comparison.html">comparison</option>
-                                    <option value="data.html">data</option>
-                                </select>
+                            <select id="Nav-Select" onchange="location = this.value;">
+                                <option value="#">select</option>
+                                <option value="landingPage.html">home</option>
+                                <option value="comparison.html">comparison</option>
+                                <option value="data.html">data</option>
+                            </select>
 
 
-                            </li>
-                            <li>
-                                <a href="comparison.html">Comparison</a>
-                            </li>
-                            <li>
-                                <a href="data.html">Data</a>
-                            </li>
-                            
-                        </ul>
-                    </nav>
-                    <div class="clearfix"></div>
-                </div>
+                        </li>
+                        <li>
+                            <a href="comparison.html">Comparison</a>
+                        </li>
+                        <li>
+                            <a href="data.html">Data</a>
+                        </li>
 
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
             </div>
 
-            `<div class="row">
-                <div class="col-md-12">
-                    <img scr="images/filler.png" width="100%">
-                </div>
+        </div>
+
+        `<div class="row">
+            <div class="col-md-12">
+                <img scr="images/filler.png" width="100%">
             </div>
+        </div>
 
 
         <div class="row">
@@ -59,28 +59,77 @@
             <div class="col-md-7" id="left">
 
                 <h2>Summary: Latitude vs. X</h2>
-                
+
                 <hr>
-                <img src='images/Fig1.png' width="50%"  alt='fig1'>
+                <img src='images/Fig1.png' width="50%" alt='fig1'>
 
-                <p>  The purpose of this project was to build an HTML based dashboard.  
-                    The project used data from the OpenWeatherMap API to a assemble a 
-                    dataset for 500 cities.  The data is used to prove the relationships between 
-                    weather and its distantance to the equator. 
-                   </p>     
+                <p> The purpose of this project was to build an HTML based dashboard.
+                    The project used data from the OpenWeatherMap API to a assemble a
+                    dataset for 500 cities. The data is used to prove the relationships between
+                    weather and its distantance to the equator.
+                </p>
 
-                   <p>
-                    The data was munged using Python Pandas library.  The graphs were generated with 
+                <p>
+                    The data was munged using Python Pandas library. The graphs were generated with
                     the Matplotlib library. This site compares the weather properties against given
-                    cities' latitudes on the globe.  The site compares temperature, wind speed, cloadiness 
-                    and humidity. Trends are captured in the four visualizations.     
-                   </p>
-                </div>  
+                    cities' latitudes on the globe. The site compares temperature, wind speed, cloadiness
+                    and humidity. Trends are captured in the four visualizations.
+                </p>
+            </div>
+        
 
 
-            </div> 
-         
+
+        <div class=" col-md-1" id="filler">
+        </div>
+        <div class="col-md-4" id="right">
+            <h2>Visualizations</h2>
+            <hr>
+            <div class="table-responsive">
+                <table class='table'>
+                    <tr>
+                        <td>
+                            <a href="visualization1.html" alt="Visualization1" >
+                                <img src="images/fig1.png" alt='Weather' Width="100%"></a>
+                        </td>
+                        <td>
+                            <a href=" visualization2.html" alt="Visualization2"><img src="images/fig2.png" alt='Weather'
+                                    Width="100%"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="visualization3.html" alt="Visualization3">
+                                <img src="images/fig3.png" alt='Weather' Width="100%">
+                            </a>
+                        </td>
+                        <td>
+                            <a href=" visualization4.html" alt="Visualization4">
+                                <img src="images/fig4.png" alt='Weather' Width="100%">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+       </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
 </body>
+
 </html>
